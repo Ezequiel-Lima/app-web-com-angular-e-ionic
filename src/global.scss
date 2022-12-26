@@ -36,3 +36,16 @@
 .capitalize {
   text-transform: capitalize;
 }
+
+.clickable {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition: transform 0.5s;
+}
+
+.clickable:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+  transition: background-color 1s;
+  transition: transform 0.5s;
+}

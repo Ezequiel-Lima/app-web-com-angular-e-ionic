@@ -5,6 +5,7 @@ export class UserModel {
     public image: string,
     public email: string,
     public token: string,
+    public password: string,
     public roles: string[]
   ) {
 
