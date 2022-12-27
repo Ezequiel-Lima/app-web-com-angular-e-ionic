@@ -1,3 +1,5 @@
+import { UserCardComponent } from './user-card/user-card.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { MonthlySalesChartComponent } from './monthly-sales-chart/monthly-sales-chart.component';
 import { LoadingComponent } from './loading/loading.component';
 import { NgModule } from '@angular/core';
@@ -8,7 +10,9 @@ import { IonicModule } from '@ionic/angular';
 @NgModule({
   declarations: [
     LoadingComponent,
-    MonthlySalesChartComponent
+    MonthlySalesChartComponent,
+    NavbarComponent,
+    UserCardComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +20,9 @@ import { IonicModule } from '@ionic/angular';
   ],
   exports: [
     LoadingComponent,
-    MonthlySalesChartComponent
+    MonthlySalesChartComponent,
+    NavbarComponent,
+    UserCardComponent
   ]
 })
 export class ComponentsModule { }

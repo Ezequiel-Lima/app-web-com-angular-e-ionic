@@ -51,7 +51,7 @@ export class LoginPage implements OnInit {
       (res: any) => {
         SecurityUtil.set(res);
         loading.dismiss();
-        this.navCtrl.navigateRoot('/');
+        this.navCtrl.navigateRoot('/home');
       },
       (err) => {
         this.showError('Usuário ou senha inválidos');
