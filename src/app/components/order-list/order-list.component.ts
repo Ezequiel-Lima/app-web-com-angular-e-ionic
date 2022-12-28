@@ -13,6 +13,7 @@ export class OrderListComponent implements OnInit {
   @Input() search = '';
   @Input() status = ['confirmed'];
   public orders: any[] = [];
+  public term: string = '';
 
   constructor(private navCtrl: NavController, private service: DataService) {}
 

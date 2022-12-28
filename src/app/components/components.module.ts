@@ -1,3 +1,5 @@
+import { FormsModule } from '@angular/forms';
+import { CustomFilter } from './order-list/custom.filter';
 import { OrderStatusBadgeComponent } from './order-status-badge/order-status-badge.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { UserCardComponent } from './user-card/user-card.component';
@@ -8,7 +10,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 
-
 @NgModule({
   declarations: [
     LoadingComponent,
@@ -16,11 +17,13 @@ import { IonicModule } from '@ionic/angular';
     NavbarComponent,
     UserCardComponent,
     OrderListComponent,
-    OrderStatusBadgeComponent
+    OrderStatusBadgeComponent,
+    CustomFilter
   ],
   imports: [
     CommonModule,
-    IonicModule.forRoot()
+    IonicModule.forRoot(),
+    FormsModule
   ],
   exports: [
     LoadingComponent,
@@ -28,7 +31,8 @@ import { IonicModule } from '@ionic/angular';
     NavbarComponent,
     UserCardComponent,
     OrderListComponent,
-    OrderStatusBadgeComponent
+    OrderStatusBadgeComponent,
+    CustomFilter
   ]
 })
 export class ComponentsModule { }
