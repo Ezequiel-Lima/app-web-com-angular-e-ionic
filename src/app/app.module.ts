@@ -1,3 +1,5 @@
+import { ManagerGuard } from './guards/manager.guard';
+import { AuthorizedGuard } from './guards/authorized.guard';
 import { ComponentsModule } from './components/components.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: 
+  declarations:
   [
     AppComponent
   ],
@@ -22,6 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     ComponentsModule
   ],
   providers: [
+    AuthorizedGuard,
+    ManagerGuard,
     {
       provide: RouteReuseStrategy,
       useClass: IonicRouteStrategy

@@ -1,3 +1,5 @@
+import { OrderStatusBadgeComponent } from './order-status-badge/order-status-badge.component';
+import { OrderListComponent } from './order-list/order-list.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MonthlySalesChartComponent } from './monthly-sales-chart/monthly-sales-chart.component';
@@ -12,7 +14,9 @@ import { IonicModule } from '@ionic/angular';
     LoadingComponent,
     MonthlySalesChartComponent,
     NavbarComponent,
-    UserCardComponent
+    UserCardComponent,
+    OrderListComponent,
+    OrderStatusBadgeComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +26,9 @@ import { IonicModule } from '@ionic/angular';
     LoadingComponent,
     MonthlySalesChartComponent,
     NavbarComponent,
-    UserCardComponent
+    UserCardComponent,
+    OrderListComponent,
+    OrderStatusBadgeComponent
   ]
 })
 export class ComponentsModule { }

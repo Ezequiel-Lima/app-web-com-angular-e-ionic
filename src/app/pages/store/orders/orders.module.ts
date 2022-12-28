@@ -5,18 +5,18 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FramePageRoutingModule } from './frame-routing.module';
+import { OrdersPageRoutingModule } from './orders-routing.module';
 
-import { FramePage } from './frame.page';
+import { OrdersPage } from './orders.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FramePageRoutingModule,
+    OrdersPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [FramePage]
+  declarations: [OrdersPage]
 })
-export class FramePageModule {}
+export class OrdersPageModule {}
